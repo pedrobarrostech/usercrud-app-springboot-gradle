@@ -1,0 +1,6 @@
+dependencies {
+    //compile('org.springframework.boot:spring-boot-starter-data-cassandra')
+    compile('org.springframework.boot:spring-boot-starter-data-mongodb')
+    compile('com.github.fakemongo:fongo:2.0.4')
+    compile project(':usercrud-domain')
+}

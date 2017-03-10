@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.fakemongo:fongo:1.6.7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/fakemongo/fongo/1.6.7/fongo-1.6.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/fakemongo/fongo/1.6.7/fongo-1.6.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

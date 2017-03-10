@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":usercrud-data" external.linked.project.path="$MODULE_DIR$/../../../usercrud-data" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="com.pedroaugust8.usercrud" external.system.module.version="1.0.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../usercrud-data">
+      <excludeFolder url="file://$MODULE_DIR$/../../../usercrud-data/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../usercrud-data/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

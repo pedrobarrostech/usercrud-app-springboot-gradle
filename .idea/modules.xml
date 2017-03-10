@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data.iml" group="usercrud-data" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data_main.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data_main.iml" group="usercrud-data" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data_test.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-data/usercrud-data_test.iml" group="usercrud-data" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain.iml" group="usercrud-domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain_main.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain_main.iml" group="usercrud-domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain_test.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-domain/usercrud-domain_test.iml" group="usercrud-domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest.iml" group="usercrud-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest_main.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest_main.iml" group="usercrud-rest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest_test.iml" filepath="$PROJECT_DIR$/.idea/modules/usercrud-rest/usercrud-rest_test.iml" group="usercrud-rest" />
+    </modules>
+  </component>
+</project>

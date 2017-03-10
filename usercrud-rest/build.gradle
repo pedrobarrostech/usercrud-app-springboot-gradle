@@ -1,0 +1,10 @@
+jar {
+    baseName = 'usercrud'
+    version =  '0.1.0'
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile project(':usercrud-domain')
+    runtime project(':usercrud-data')
+}
