@@ -23,7 +23,7 @@ public class User {
         this.password = password;
     }
 
-    public String getId() {
+    public String getid() {
         return id;
     }
 
@@ -52,6 +52,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{ownerId='" + id + "', name='" + name + "', password='" + password + "'}";
+        return "User{id='" + id + "', name='" + name + "', password='" + password + "'}";
     }
 }

@@ -7,4 +7,5 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile project(':usercrud-domain')
     runtime project(':usercrud-data')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
