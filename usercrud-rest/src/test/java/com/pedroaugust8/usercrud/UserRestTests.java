@@ -1,4 +1,4 @@
-package com.pedroaugust8.usercrud;
+/* package com.pedroaugust8.usercrud;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -20,7 +20,7 @@ public class UserRestTests {
 
     @Autowired
     private MockMvc mockMvc;
-/*
+
     @Test
     public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
 
@@ -28,6 +28,5 @@ public class UserRestTests {
                 .andExpect(jsonPath("$.content").value("Hello, World!"));
     }
 
-    */
-
 }
+*/

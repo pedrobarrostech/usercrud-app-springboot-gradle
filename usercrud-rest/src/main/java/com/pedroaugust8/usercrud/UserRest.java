@@ -5,18 +5,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.inject.Inject;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Pedro Barros
  */
 @RestController
+@CrossOrigin
 @RequestMapping("/users")
 public class UserRest {
     private final UserRepository userRepository;
 
-    @Inject
+    @Autowired
     public UserRest(final UserRepository userRepository) {
         this.userRepository = userRepository;
     }

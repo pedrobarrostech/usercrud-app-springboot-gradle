@@ -1,8 +1,7 @@
 package com.pedroaugust8.usercrud;
 
 import org.springframework.stereotype.Repository;
-
-import javax.inject.Inject;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author Pedro Barros
@@ -12,7 +11,7 @@ public class UserRepositorySpringData implements UserRepository {
 
     private final UserDaoMongo dao;
 
-    @Inject
+    @Autowired
     public UserRepositorySpringData(final UserDaoMongo dao) {
         this.dao = dao;
     }
