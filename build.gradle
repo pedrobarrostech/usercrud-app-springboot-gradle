@@ -1,15 +1,5 @@
-allprojects  {
-  group = 'com.pedroaugust8.usercrud'
-  version = '1.0.0-SNAPSHOT'
-}
-
-buildscript {
-  repositories {
-    mavenCentral()
-  }
-  dependencies {
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
-  }
+plugins {
+  id 'org.springframework.boot' version '1.5.2.RELEASE' apply false
 }
 
 subprojects {
@@ -21,13 +11,7 @@ subprojects {
   targetCompatibility = 1.8
 
   repositories {
-      mavenCentral()
+    jcenter()
+    mavenCentral()
   }
-
-  dependencies {
-    compile group: 'javax.inject', name: 'javax.inject', version:'1'
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-    testCompile('com.jayway.jsonpath:json-path')
-  }
-
 }

@@ -69,6 +69,8 @@ export class UsersComponent implements OnInit {
     this.getUsers();
   }
 
+
+/*
   editUser(user) {
     this._userService.update(user).subscribe(
       res => {
@@ -79,8 +81,8 @@ export class UsersComponent implements OnInit {
       error => console.log(error)
     );
   }
-
-  /*
+*/
+  
   deleteUser(user) {
     if(window.confirm("Are you sure you want to permanently delete this User?")) {
       this._userService.remove(user).subscribe(
@@ -93,7 +95,7 @@ export class UsersComponent implements OnInit {
       );
     }
   }
-  */
+  
 
   sendInfoMsg(body, type, time = 3000) {
     this.infoMsg.body = body;

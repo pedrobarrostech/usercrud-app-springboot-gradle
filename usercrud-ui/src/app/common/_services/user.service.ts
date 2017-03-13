@@ -48,9 +48,9 @@ export class UserService {
   }
   
   private handleError (error: any) {
-    let errMsg = (error.message) ? error.message : error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-    console.error(errMsg); // log to console instead
-    return Observable.throw(errMsg);
+    let errMsg = (error.message) ? error.message : error.errorCode ? `${error.errorCode} - ${error.message}` : 'Server error';
+    console.error(error); // log to console instead
+    return Observable.throw(error);
   }
 
 }

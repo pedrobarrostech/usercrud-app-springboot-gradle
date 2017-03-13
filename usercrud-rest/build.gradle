@@ -1,11 +1,9 @@
-jar {
-    baseName = 'usercrud'
-    version =  '0.1.0'
-}
+description = 'usercrud-rest'
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile project(':usercrud-domain')
     runtime project(':usercrud-data')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile group: 'junit', name: 'junit', version:'4.11'
+    testCompile group: 'org.mockito', name: 'mockito-core', version:'2.7.13'
 }

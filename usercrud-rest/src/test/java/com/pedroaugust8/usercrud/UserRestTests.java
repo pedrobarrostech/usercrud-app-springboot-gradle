@@ -1,32 +1,45 @@
 /* package com.pedroaugust8.usercrud;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import java.util.List;
 
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
-public class UserRestTests {
+import com.pedroaugust8.usercrud.UserRest;
 
-    @Autowired
-    private MockMvc mockMvc;
+import static org.mockito.Mockito.*;
 
-    @Test
-    public void noParamGreetingShouldReturnDefaultMessage() throws Exception {
-
-        this.mockMvc.perform(get("/users")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.content").value("Hello, World!"));
-    }
-
+public class MovieResourceTest {
+	private MovieService movieService;
+	private List<Movie> mockList;
+	private MovieResource target;
+	
+	@Before
+	public void setUp(){
+		mockList = (List<Movie>) mock(List.class);
+		movieService = mock(MovieService.class);
+		
+		when(movieService.list()).thenReturn(mockList);
+		
+		target = new MovieResource(movieService);
+	}
+	
+	@Test
+	public void save(){
+		Movie movie = new Movie();
+		
+		target.save(movie);
+		
+		verify(movieService).addMovie(movie);
+	}
+	
+	@Test
+	public void list(){
+		List<Movie> actualList = target.list();
+		
+		Assert.assertEquals(mockList, actualList);
+	}
 }
+
 */

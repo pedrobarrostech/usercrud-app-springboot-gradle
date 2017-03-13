@@ -1,27 +1,23 @@
 package com.pedroaugust8.usercrud;
 
 import java.util.Objects;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 
 /**
  * @author Pedro Barros
  */
 public class User {
     private String id;
+    
+    @NotNull
+    @Min(6)
     private String username;
+    
+    @NotNull
+    @Min(6)
     private String password;
-
-    User() {
-    }
-
-    public User(String username) {
-        this.username = username;
-    }
-
-    public User(String id, String username, String password) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-    }
 
     public String getid() {
         return id;
