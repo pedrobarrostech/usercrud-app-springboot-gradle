@@ -1,6 +1,9 @@
 package com.pedroaugust8.usercrud;
 
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -17,7 +20,7 @@ public class UserRepositorySpringData implements UserRepository {
     }
 
     @Override
-    public Iterable<User> list() {
+    public List<User> list() {
         return dao.findAll();
     }
 
