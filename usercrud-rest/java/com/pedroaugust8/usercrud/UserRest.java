@@ -44,8 +44,9 @@ public class UserRest {
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable("id") final String id) {
-        userRepository.delete(id);
+    public ResponseEntity<Object> delete(@PathVariable("id") final String id) throws UserException {
+		userRepository.delete(id);
+        return new ResponseEntity<Object>(HttpStatus.OK);
     }
 
     @RequestMapping(value = "{id}", method = RequestMethod.GET)

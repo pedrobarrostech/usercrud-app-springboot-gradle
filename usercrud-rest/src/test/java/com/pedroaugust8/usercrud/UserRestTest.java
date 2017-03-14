@@ -49,11 +49,22 @@ public class UserRestTest {
 		Assert.assertEquals(mockList, actualList);
 	}
 	
+	
 	/*@Test
 	public void delete(){
-		int actualSize = actualList.size();
-		target.delete(actualList.get(0).getid());
-		Assert.assertNotEquals(actualSize, actualList.size());
+		
+		try {
+			target.delete(actualList.get(0).getid());
+		} catch (UserException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		verify(service).delete(actualList.get(0).getid());
+		
 	}*/
+	
+	
+	
+	
 	
 }
